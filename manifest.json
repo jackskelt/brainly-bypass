@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Brainly Bypass by Jack",
+  "version": "1.0.0",
+  "author": "JackSkelt",
+  "description": "Remova os limites de visualização de resposta no Brainly",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "brainly-bypass.js"
+      ],
+      "matches": [
+        "https://*.brainly.com.br/*",
+        "https://*.brainly.com/*",
+        "https://*.brainly.in/*"
+      ]
+    }
+  ]
+}
